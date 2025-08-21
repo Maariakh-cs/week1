@@ -5,7 +5,7 @@ It includes a **semantic HTML structure** with a header, navigation, hero sectio
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ├── index.html 
 ├── styles.css 
