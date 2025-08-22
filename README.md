@@ -1,12 +1,14 @@
 # Week 1 Project
 
-This is a simple **HTML + CSS project** created as a practice exercise.  
-It includes a **semantic HTML structure** with a header, navigation, hero section, features, and footer.
+A simple responsive webpage built with HTML, CSS, and JavaScript.
+Includes a hamburger menu, contact form with validation, and basic layout sections (hero, features, footer).
+Made for practicing frontend fundamentals.
 
 ---
 
 ## Project Structure
 
-├── index.html 
+├── index.html
+├── scripts.js
 ├── styles.css 
 └── assets/ 
