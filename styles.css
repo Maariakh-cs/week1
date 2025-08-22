@@ -25,6 +25,7 @@ body
     justify-content: space-between;
     top: 0px;
     background-size: cover;
+    background-color: darkgray;
     color: white;
     padding: 10px 20px;
 }        
@@ -83,30 +84,30 @@ body
 
 .btn-login 
 {
-    background: blue;
+    background: darkblue;
     color: white;
 }
 
 .btn-login:hover 
 {
-    background: darkblue;
+    background: blue;
 }
 
 .btn-signup 
 {
-  background: blue;
+  background: darkblue;
   color: white;
 }
 
 .btn-signup:hover 
 {
-  background: darkblue;
+  background: blue;
 }
 
 .btn 
 {
-    background-color: blue;
-    color: black;
+    background-color: darkblue;
+    color: whitw;
     border: none;
     padding: 8px 12px;
     border-radius: 5px;
@@ -116,7 +117,7 @@ body
 
 .btn:hover 
 {
-    background-color: black;
+    background-color: blue;
     color: lavender;
 }
 
@@ -137,6 +138,7 @@ header
 .hero-section h1 
 {
   margin-bottom: 20px;
+  color: darkblue;
 }
 
 .hero-section p 
@@ -148,7 +150,7 @@ header
 {
   padding: 0.7rem 1.2rem;
   font-size: 1rem;
-  background: blue;
+  background: darkblue;
   color: white;
   border: none;
   border-radius: 4px;
@@ -157,13 +159,15 @@ header
 
 .hero-section button:hover 
 {
-  background: darkblue;
+  background: blue;
 }
 
 .hero-section img 
 {
   margin-top: 20px;
   border-radius: 8px;
+  max-width: 100%;
+  height: auto;
 }
 
 .features 
@@ -180,13 +184,12 @@ header
   padding: 20px;
   border-radius: 8px;
   text-align: center;
-  transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .features h2 
 {
   margin-bottom: 0.5rem;
-  color: blue;
+  color: darkblue;
 }
 
 footer 
@@ -196,6 +199,52 @@ footer
   background: slategrey;
   color: white;
   margin-top: 50px;
+}
+
+.hamburger 
+{
+  display: none; 
+  font-size: 20px;
+  background: none;
+  border: 1px;
+  cursor: pointer;
+}
+
+.contact-section
+{
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-section h2
+{
+  margin-bottom: 20px;
+  color: darkblue;
+}
+
+#contactForm 
+{
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+#contactForm button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: darkblue;
+  color: white;
+  cursor: pointer;
+}
+
+#contactForm button:hover {
+  background: blue;
 }
 
 @media (max-width: 768px) 
@@ -208,8 +257,21 @@ footer
 
   .nav-list 
   {
+    display: none;
     flex-direction: column;
+    top: 60px; 
+    left: 0;
     width: 100%;
+    padding: 20px;
+  }
+  .nav-list.active
+  {
+    display: flex;
+  } 
+
+  .hamburger
+  {
+    display: block; 
   }
 
   .nav-list li 
